@@ -29,8 +29,9 @@ from ._globals import Global
 from ._table import Table
 from ._memory import Memory
 from ._instance import Instance
-from ._wasi import WasiConfig
+from ._wasi import WasiConfig, FilePerms, DirPerms
 from ._linker import Linker
+from ._sharedmemory import SharedMemory
 
 __all__ = [
     'wat2wasm',
@@ -50,6 +51,7 @@ __all__ = [
     'Caller',
     'Table',
     'Memory',
+    'SharedMemory',
     'Global',
     'Trap',
     'TrapCode',
@@ -58,6 +60,8 @@ __all__ = [
     'Module',
     'Instance',
     'WasiConfig',
+    'FilePerms',
+    'DirPerms',
     'Linker',
     'WasmtimeError',
 ]
